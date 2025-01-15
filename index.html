@@ -17,7 +17,7 @@
 				border-bottom: 2px solid grey;
 			}
 
-			.navbar a {
+			.navbar a{
 				color: #f2f2f2;
 				text-align: center;
 				padding: 14px 16px;
@@ -26,13 +26,23 @@
 				
 			}
 
-			.navbar a:hover {
+			.navbar a:hover, button:hover{
 				font-weight: bold;
 			}
 
 			.navbar a.active {
 				font-weight: bold;
 			}
+			
+			.navbar button {
+				background: none!important;
+				border: none;
+				padding: 0!important;
+				color: white;
+				font-size: 16px;
+				font-family: 'Open Sans';
+			}
+
 
 			.info {
 				text-align:center;
@@ -54,6 +64,8 @@
 				font-size: 16px;
 				color: white;
 			}
+			
+			
 		}
 		</style>
 	</head>
@@ -64,12 +76,12 @@
 			<h2>Front-end developer</h2>
 		</div>
 
-		<div class="navbar">
+		<nav class="navbar">
 			<a class="active">About</a>
-			<a href="https://github.com/samuteel">Projects</a>
-			<a>Github</a>
+			<button>Projects</button>
+			<a href="https://github.com/samuteel">Github</a>
 			<a>Contact</a>
-		</div>
+		</nav>
 
 		<div class="info">
 			<p>I am a computer science graduate.</p>
