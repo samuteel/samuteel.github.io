@@ -30,14 +30,14 @@
 				font-weight: bold;
 			}
 
-			.navbar a.active {
+			.navbar a.active, button.active {
 				font-weight: bold;
 			}
 			
 			.navbar button {
 				background: none!important;
 				border: none;
-				padding: 0!important;
+				padding: 14px 16px;
 				color: white;
 				font-size: 16px;
 				font-family: 'Open Sans';
@@ -64,6 +64,31 @@
 				font-size: 16px;
 				color: white;
 			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+			float: left;
+			width: 25%;
+			}
+
+			/* On screens that are 992px wide or less, go from four columns to two columns */
+			@media screen and (max-width: 992px) {
+			.column {
+				width: 50%;
+			}
+			}
+
+			/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+			}
+			}
+
+			.column h2, p{
+				text-align: center;
+			}
+
 			
 			
 		}
@@ -77,15 +102,24 @@
 		</div>
 
 		<nav class="navbar">
-			<a class="active">About</a>
+			<button class="active">About</button>
 			<button>Projects</button>
 			<a href="https://github.com/samuteel">Github</a>
-			<a>Contact</a>
+			<button>Contact</button>
 		</nav>
 
 		<div class="info">
 			<p>I am a computer science graduate.</p>
 			<p>Give me a job.</p>
+		</div>
+
+		<div class="projects">
+			<div class="column" style="background-color: gray;">
+				<h2>Mockup Website</h2>
+				<p>A proof of concept website for a fictional bakery</p>
+
+			</div>
+
 		</div>
 	</body>
 </html>
